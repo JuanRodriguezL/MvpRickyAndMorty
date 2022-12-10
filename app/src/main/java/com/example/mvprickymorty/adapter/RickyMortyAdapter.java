@@ -13,13 +13,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.mvprickymorty.R;
 import com.example.mvprickymorty.modelos.InformacionRespuesta;
-import com.example.mvprickymorty.modelos.ModelosRickyMorty;
+import com.example.mvprickymorty.modelos.CharactersRickyMorty;
 
 import java.util.ArrayList;
 
 public class RickyMortyAdapter extends RecyclerView.Adapter<RickyMortyAdapter.ViewHolder> {
 
-    ArrayList<ModelosRickyMorty> listRickyMortyAdapter;
+    ArrayList<CharactersRickyMorty> listRickyMortyAdapter;
     Context context;
 
 

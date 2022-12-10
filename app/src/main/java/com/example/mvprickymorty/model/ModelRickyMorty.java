@@ -8,9 +8,6 @@ import com.example.mvprickymorty.adapter.RickyMortyAdapter;
 import com.example.mvprickymorty.interfaces.Imvp;
 import com.example.mvprickymorty.interfaces.RickyMortyService;
 import com.example.mvprickymorty.modelos.InformacionRespuesta;
-import com.example.mvprickymorty.modelos.ModelosRickyMorty;
-
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;

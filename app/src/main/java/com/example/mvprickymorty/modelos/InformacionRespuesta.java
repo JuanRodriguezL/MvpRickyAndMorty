@@ -5,12 +5,12 @@ import java.util.ArrayList;
 public class InformacionRespuesta {
 
 
-    ArrayList<ModelosRickyMorty> results;
-    public ArrayList<ModelosRickyMorty> getResults() {
+    ArrayList<CharactersRickyMorty> results;
+    public ArrayList<CharactersRickyMorty> getResults() {
         return results;
     }
 
-    public void setResults(ArrayList<ModelosRickyMorty> results) {
+    public void setResults(ArrayList<CharactersRickyMorty> results) {
         this.results = results;
     }
 

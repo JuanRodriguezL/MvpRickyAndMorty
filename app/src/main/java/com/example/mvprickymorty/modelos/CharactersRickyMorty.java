@@ -2,7 +2,7 @@ package com.example.mvprickymorty.modelos;
 
 import java.util.ArrayList;
 
-public class ModelosRickyMorty {
+public class CharactersRickyMorty {
 
     private int id;
     private String name;
@@ -14,6 +14,15 @@ public class ModelosRickyMorty {
     private String created;
     private Common origin;
     private Common location;
+
+    public ArrayList<String> getEpisode() {
+        return episode;
+    }
+
+    public void setEpisode(ArrayList<String> episode) {
+        this.episode = episode;
+    }
+
     private ArrayList<String> episode;
 
     public Common getOrigin() {
