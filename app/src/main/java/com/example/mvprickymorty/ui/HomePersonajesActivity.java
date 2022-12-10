@@ -23,6 +23,7 @@ public class HomePersonajesActivity extends AppCompatActivity implements Imvp.Vi
         setContentView(R.layout.activity_home_personajes);
         presenter = new RickyMortyPresenter(this);
         presenter.consultarListaPersonajes();
+        recyclerView = findViewById(R.id.recyclerhome);
         rickyMortyAdapter = new RickyMortyAdapter(this);
     }
 
