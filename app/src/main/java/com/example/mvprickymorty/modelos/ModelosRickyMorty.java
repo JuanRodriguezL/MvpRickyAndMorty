@@ -1,9 +1,37 @@
 package com.example.mvprickymorty.modelos;
 
+import java.util.ArrayList;
+
 public class ModelosRickyMorty {
 
     private int id;
     private String name;
+    private String status;
+    private String species;
+    private String type;
+    private String gender;
+    private String image;
+    private String created;
+    private Common origin;
+    private Common location;
+    private ArrayList<String> episode;
+
+    public Common getOrigin() {
+        return origin;
+    }
+
+    public void setOrigin(Common origin) {
+        this.origin = origin;
+    }
+
+    public Common getLocation() {
+        return location;
+    }
+
+    public void setLocation(Common location) {
+        this.location = location;
+    }
+
 
     public int getId() {
         return id;
@@ -69,12 +97,6 @@ public class ModelosRickyMorty {
         this.created = created;
     }
 
-    private String status;
-    private String species;
-    private String type;
-    private String gender;
-    private String image;
-    private String created;
 
 
 }
