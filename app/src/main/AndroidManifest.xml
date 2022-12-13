@@ -3,6 +3,7 @@
     package="com.example.mvprickymorty">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MvpRickyMorty">
+        <activity
+            android:name=".ui.CapitulosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.LocationActivity"
+            android:exported="true" />
         <activity
             android:name=".ui.HomePersonajesActivity"
             android:exported="true" />

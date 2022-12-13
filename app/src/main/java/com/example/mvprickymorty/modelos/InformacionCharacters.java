@@ -2,7 +2,7 @@ package com.example.mvprickymorty.modelos;
 
 import java.util.ArrayList;
 
-public class InformacionRespuesta {
+public class InformacionCharacters {
 
 
     ArrayList<CharactersRickyMorty> results;

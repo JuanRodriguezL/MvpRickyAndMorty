@@ -8,13 +8,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mvprickymorty.R;
 import com.example.mvprickymorty.adapter.RickyMortyAdapter;
-import com.example.mvprickymorty.interfaces.Imvp;
-import com.example.mvprickymorty.modelos.InformacionRespuesta;
+import com.example.mvprickymorty.interfaces.personajes.ImvpCharacters;
+import com.example.mvprickymorty.modelos.InformacionCharacters;
 import com.example.mvprickymorty.presenter.RickyMortyPresenter;
 
-public class HomePersonajesActivity extends AppCompatActivity implements Imvp.View {
+public class HomePersonajesActivity extends AppCompatActivity implements ImvpCharacters.View {
     RecyclerView recyclerView;
-    Imvp.Presenter presenter;
+    ImvpCharacters.Presenter presenter;
     RickyMortyAdapter rickyMortyAdapter;
 
     @Override
@@ -28,11 +28,13 @@ public class HomePersonajesActivity extends AppCompatActivity implements Imvp.Vi
     }
 
     @Override
-    public void ShowRecyclerV(InformacionRespuesta modelosRickyMortyArrayList) {
+    public void ShowRecyclerV(InformacionCharacters modelosRickyMortyArrayList) {
         rickyMortyAdapter.setAdicion(modelosRickyMortyArrayList);
         recyclerView.setLayoutManager(new GridLayoutManager(HomePersonajesActivity.this, 2));
         recyclerView.setAdapter(rickyMortyAdapter);
 
 
     }
+
+
 }

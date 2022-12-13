@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.mvprickymorty.R;
-import com.example.mvprickymorty.modelos.InformacionRespuesta;
+import com.example.mvprickymorty.modelos.InformacionCharacters;
 import com.example.mvprickymorty.modelos.CharactersRickyMorty;
 
 import java.util.ArrayList;
@@ -53,7 +53,7 @@ public class RickyMortyAdapter extends RecyclerView.Adapter<RickyMortyAdapter.Vi
 
 
 
-    public void setAdicion(InformacionRespuesta modelosRickyMortyArrayList) {
+    public void setAdicion(InformacionCharacters modelosRickyMortyArrayList) {
         this.listRickyMortyAdapter= modelosRickyMortyArrayList.getResults();
 
     }

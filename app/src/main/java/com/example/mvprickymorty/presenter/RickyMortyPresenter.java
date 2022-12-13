@@ -1,30 +1,30 @@
 package com.example.mvprickymorty.presenter;
 
-import com.example.mvprickymorty.interfaces.Imvp;
-import com.example.mvprickymorty.model.ModelRickyMorty;
-import com.example.mvprickymorty.modelos.InformacionRespuesta;
+import com.example.mvprickymorty.interfaces.personajes.ImvpCharacters;
+import com.example.mvprickymorty.model.RickyMortyModel;
+import com.example.mvprickymorty.modelos.InformacionCharacters;
 
-public class RickyMortyPresenter implements Imvp.Presenter {
-    private Imvp.View viewL;
-    private Imvp.Model modelL;
+public class RickyMortyPresenter implements ImvpCharacters.Presenter{
+    private ImvpCharacters.View viewC;
+    private ImvpCharacters.Model modelC;
 
-    public RickyMortyPresenter(Imvp.View viewI) {
-        this.viewL = viewI;
-        modelL = new ModelRickyMorty(this);
+    public RickyMortyPresenter(ImvpCharacters.View viewI) {
+        this.viewC = viewI;
+        modelC = new RickyMortyModel(this);
     }
 
     @Override
-    public void ShowRecyclerP(InformacionRespuesta modelosRickyMortyArrayList) {
-        if(viewL!=null){
-            viewL.ShowRecyclerV(modelosRickyMortyArrayList);
+    public void ShowRecyclerP(InformacionCharacters modelosRickyMortyArrayList) {
+        if(viewC !=null){
+            viewC.ShowRecyclerV(modelosRickyMortyArrayList);
         }
 
     }
 
     @Override
     public void consultarListaPersonajes() {
-        if(modelL!=null){
-            modelL.consultarListaPersonajes();
+        if(modelC !=null){
+            modelC.consultarListaPersonajes();
         }
     }
 }
