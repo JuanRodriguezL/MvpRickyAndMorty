@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/WPOSS BGA 634K/Documents/MvpRickyMorty/app/src/main/res/layout/activity_home_personajes.xml" value="0.3625" />
+        <entry key="..\:/Users/WPOSS BGA 634K/Documents/MvpRickyMorty/app/src/main/res/layout/activity_location.xml" value="0.3428442028985507" />
         <entry key="..\:/Users/WPOSS BGA 634K/Documents/MvpRickyMorty/app/src/main/res/layout/activity_main.xml" value="0.3484375" />
         <entry key="..\:/Users/WPOSS BGA 634K/Documents/MvpRickyMorty/app/src/main/res/layout/item_botton.xml" value="0.3625" />
         <entry key="..\:/Users/WPOSS BGA 634K/Documents/MvpRickyMorty/app/src/main/res/layout/itemhome.xml" value="0.3625" />
+        <entry key="..\:/Users/WPOSS BGA 634K/Documents/MvpRickyMorty/app/src/main/res/layout/itemlocation.xml" value="0.3428442028985507" />
       </map>
     </option>
   </component>

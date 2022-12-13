@@ -16,11 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RickyMortyModel implements ImvpCharacters.Model {
 
-
-
     InformacionCharacters informacionCharacters;
-    InformationLocation informationLocation;
-
     private ImvpCharacters.Presenter presenter;
 
 
@@ -61,29 +57,5 @@ public class RickyMortyModel implements ImvpCharacters.Model {
     }
 
 
-    public void consultarListaLocation() {
-        informationLocation = new InformationLocation();
-        Retrofit retrofit= new Retrofit.Builder()
-                .baseUrl("https://rickandmortyapi.com/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
 
-        RickyMortyService rickyMortyService = retrofit.create(RickyMortyService.class);
-     Call<InformationLocation> call = rickyMortyService.getLocationList();
-     call.enqueue(new Callback<InformationLocation>() {
-         @Override
-         public void onResponse(Call<InformationLocation> call, Response<InformationLocation> response) {
-             informationLocation = response.body();
-
-
-         }
-
-         @Override
-         public void onFailure(Call<InformationLocation> call, Throwable t) {
-
-         }
-     });
-
-
-    }
 }
