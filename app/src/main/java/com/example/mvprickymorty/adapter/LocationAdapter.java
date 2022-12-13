@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mvprickymorty.R;
+import com.example.mvprickymorty.modelos.InformationLocation;
 import com.example.mvprickymorty.modelos.Location;
 
 import java.util.ArrayList;
@@ -38,6 +39,10 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.ViewHo
     @Override
     public int getItemCount() {
         return locationArrayListAdapter.size();
+    }
+
+    public void setAdicion(InformationLocation locationRickyMortyArrayList) {
+        locationArrayListAdapter=locationRickyMortyArrayList.getResults();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
