@@ -10,7 +10,10 @@ import com.example.mvprickymorty.R;
 import com.example.mvprickymorty.adapter.LocationAdapter;
 import com.example.mvprickymorty.interfaces.location.ImvpLocation;
 import com.example.mvprickymorty.modelos.InformationLocation;
+import com.example.mvprickymorty.modelos.Location;
 import com.example.mvprickymorty.presenter.LocationPresenter;
+
+import java.util.ArrayList;
 
 public class LocationActivity extends AppCompatActivity implements ImvpLocation.View {
 
@@ -23,7 +26,7 @@ public class LocationActivity extends AppCompatActivity implements ImvpLocation.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
-        presenter = new LocationPresenter();
+        presenter = new LocationPresenter(this);
         presenter.consultarListaLocation();
         recyclerViewL = findViewById(R.id.recyclreLocation);
         locationAdapter = new LocationAdapter(this);
