@@ -1,43 +1,53 @@
 package com.example.mvprickymorty;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
+import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
-import com.example.mvprickymorty.ui.CapitulosActivity;
-import com.example.mvprickymorty.ui.HomePersonajesActivity;
-import com.example.mvprickymorty.ui.LocationActivity;
+import com.example.mvprickymorty.ui.CapitulosFragment;
+import com.example.mvprickymorty.ui.HomeFragment;
+import com.example.mvprickymorty.ui.LocationFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
-    Button button;
-    Button button1;
-    Button button2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button= findViewById(R.id.buttonPerson);
-        button1= findViewById(R.id.buttonCapitulos);
-        button2= findViewById(R.id.buttonUbicaciones);
 
-        button.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, HomePersonajesActivity.class);
-            startActivity(intent);
+
+        BottomNavigationView navigation = findViewById(R.id.navigationOption);
+        navigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.personajesf:
+                        replaceFragment(new HomeFragment());
+                        break;
+                    case R.id.capitulosf:
+                        replaceFragment(new CapitulosFragment());
+                        break;
+                    case R.id.locationesf:
+                        replaceFragment(new LocationFragment());
+                        break;
+
+                }
+
+                return true;
+            }
         });
 
-        button1.setOnClickListener(v->{
-            Intent intent = new Intent(MainActivity.this, CapitulosActivity.class);
-            startActivity(intent);
 
-        });
+    }
 
-        button2.setOnClickListener(v-> {
-            Intent intent = new Intent(MainActivity.this, LocationActivity.class);
-            startActivity(intent);
-        });
+    private void replaceFragment(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
     }
 
 }

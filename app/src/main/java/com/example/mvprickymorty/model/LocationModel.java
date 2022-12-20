@@ -12,7 +12,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LocationModel implements ImvpLocation.Model {
 
-
     ImvpLocation.Presenter presenter;
     InformationLocation informationLocation;
 
@@ -20,9 +19,6 @@ public class LocationModel implements ImvpLocation.Model {
         this.presenter = presenter;
 
     }
-
-
-
 
     @Override
     public void consultarListaLocation() {

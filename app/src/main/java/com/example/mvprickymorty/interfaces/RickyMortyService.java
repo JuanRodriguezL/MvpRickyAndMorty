@@ -1,6 +1,7 @@
 package com.example.mvprickymorty.interfaces;
 
 import com.example.mvprickymorty.modelos.InformacionCharacters;
+import com.example.mvprickymorty.modelos.InformacionEpisodes;
 import com.example.mvprickymorty.modelos.InformationLocation;
 
 import retrofit2.Call;
@@ -16,6 +17,6 @@ public interface RickyMortyService {
 
 
     @GET("api/episode")
-    Call<InformacionCharacters> getEpisodeList();
+    Call<InformacionEpisodes> getEpisodeList();
 
 }
