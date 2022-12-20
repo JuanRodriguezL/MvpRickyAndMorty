@@ -14,6 +14,7 @@ import com.bumptech.glide.Glide;
 import com.example.mvprickymorty.R;
 import com.example.mvprickymorty.modelos.InformacionCharacters;
 import com.example.mvprickymorty.modelos.CharactersRickyMorty;
+import com.example.mvprickymorty.ui.HomeFragment;
 
 import java.util.ArrayList;
 

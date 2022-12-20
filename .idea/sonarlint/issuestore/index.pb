@@ -15,16 +15,12 @@ q
 Aapp/src/main/java/com/example/mvprickymorty/modelos/Location.java,9\9\99d92a33f0dfdfb17f6799b4ade888a72fc1465c
 ~
 Napp/src/main/java/com/example/mvprickymorty/modelos/InformacionCharacters.java,e\0\e0a2173f241b0f1e177df9f407166b407209b101
-z
-Japp/src/main/java/com/example/mvprickymorty/adapter/RickyMortyAdapter.java,b\5\b5e21f34abcd84a8e2fbd38b471277c944d544c8
 Å
 Qapp/src/main/java/com/example/mvprickymorty/interfaces/location/ImvpLocation.java,2\4\242d0a169ff8dc8ac36fa3aaf959efcfc57de20f
 |
 Lapp/src/main/java/com/example/mvprickymorty/modelos/InformacionEpisodes.java,f\a\fa69b086163e1bc97d0ae401dadcd6a8303bf9fb
 |
 Lapp/src/main/java/com/example/mvprickymorty/presenter/LocationPresenter.java,e\1\e1483d9d35d96356311d3c3f7a4e186de591179f
-~
-Napp/src/main/java/com/example/mvprickymorty/presenter/RickyMortyPresenter.java,8\e\8eef810d427fd2cbd7e8e01e064f663ad14e001e
 {
 Kapp/src/main/java/com/example/mvprickymorty/presenter/EpisodePresenter.java,3\0\306e087b55f285ec56ce123cdbf2971e11a908e2
 Ä
