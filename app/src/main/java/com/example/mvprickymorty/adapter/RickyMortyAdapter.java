@@ -2,6 +2,7 @@ package com.example.mvprickymorty.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.RoundedCorner;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -11,10 +12,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.GlideDrawable;
+import com.bumptech.glide.request.target.Target;
 import com.example.mvprickymorty.R;
 import com.example.mvprickymorty.modelos.InformacionCharacters;
 import com.example.mvprickymorty.modelos.CharactersRickyMorty;
 import com.example.mvprickymorty.ui.HomeFragment;
+import com.google.android.material.shape.RoundedCornerTreatment;
 
 import java.util.ArrayList;
 

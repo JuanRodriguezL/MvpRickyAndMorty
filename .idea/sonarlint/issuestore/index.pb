@@ -1,6 +1,4 @@
 
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 x
@@ -21,9 +19,5 @@ Qapp/src/main/java/com/example/mvprickymorty/interfaces/location/ImvpLocation.ja
 Lapp/src/main/java/com/example/mvprickymorty/modelos/InformacionEpisodes.java,f\a\fa69b086163e1bc97d0ae401dadcd6a8303bf9fb
 |
 Lapp/src/main/java/com/example/mvprickymorty/presenter/LocationPresenter.java,e\1\e1483d9d35d96356311d3c3f7a4e186de591179f
-{
-Kapp/src/main/java/com/example/mvprickymorty/presenter/EpisodePresenter.java,3\0\306e087b55f285ec56ce123cdbf2971e11a908e2
-€
-Papp/src/main/java/com/example/mvprickymorty/interfaces/episodes/ImvpEpisode.java,8\a\8a910c5bfd05e34a325f98128e32f855eacc2143
 }
 Mapp/src/main/java/com/example/mvprickymorty/interfaces/RickyMortyService.java,e\7\e72e6b2827608efbad058a9723716367c8513e7b
