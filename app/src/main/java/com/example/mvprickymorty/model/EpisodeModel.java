@@ -16,6 +16,10 @@ public class EpisodeModel implements ImvpEpisode.Model {
     ImvpEpisode.Presenter presenter;
     InformacionEpisodes informacionEpisodes;
 
+public EpisodeModel(ImvpEpisode.Presenter presenterE){
+    this.presenter = presenterE;
+
+}
 
     @Override
     public void ConsultarListaEpisodesM() {

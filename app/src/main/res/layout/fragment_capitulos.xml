@@ -3,12 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".ui.CapitulosFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CAPITULOS"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/purple_700"
+            android:gravity="center"/>
 
 
         <androidx.recyclerview.widget.RecyclerView
@@ -16,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:listitem="@layout/fragment_home" />
+
     </LinearLayout>
 
 </FrameLayout>

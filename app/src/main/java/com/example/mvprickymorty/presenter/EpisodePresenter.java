@@ -10,7 +10,7 @@ public class EpisodePresenter implements ImvpEpisode.Presenter {
 
 
     public EpisodePresenter(ImvpEpisode.View viewEp) {
-        modelE = new EpisodeModel();
+        modelE = new EpisodeModel(this);
         this.viewE = viewEp;
     }
 

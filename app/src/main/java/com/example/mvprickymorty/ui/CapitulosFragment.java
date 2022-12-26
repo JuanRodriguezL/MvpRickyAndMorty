@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mvprickymorty.R;
@@ -16,14 +17,11 @@ import com.example.mvprickymorty.interfaces.episodes.ImvpEpisode;
 import com.example.mvprickymorty.modelos.InformacionEpisodes;
 import com.example.mvprickymorty.presenter.EpisodePresenter;
 
-import java.util.ArrayList;
-
 public class CapitulosFragment extends Fragment implements ImvpEpisode.View {
 
     RecyclerView recyclerView;
     ImvpEpisode.Presenter presenter;
     EpisodesAdapter episodesAdapter;
-
 
 
     public CapitulosFragment() {
@@ -42,7 +40,7 @@ public class CapitulosFragment extends Fragment implements ImvpEpisode.View {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         recyclerView = view.findViewById(R.id.recyclerhomeE);
-        episodesAdapter =new EpisodesAdapter(getContext());
+        episodesAdapter = new EpisodesAdapter(getContext());
 
 
     }
@@ -57,6 +55,10 @@ public class CapitulosFragment extends Fragment implements ImvpEpisode.View {
 
     @Override
     public void RecyclerEpisodesV(InformacionEpisodes episodesRickyMortyArrayList) {
+        episodesAdapter.setAdicion(episodesRickyMortyArrayList);
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
+        recyclerView.setAdapter(episodesAdapter);
+
 
     }
 }
