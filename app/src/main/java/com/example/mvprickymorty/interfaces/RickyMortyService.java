@@ -6,6 +6,7 @@ import com.example.mvprickymorty.modelos.InformationLocation;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 public interface RickyMortyService {
 
@@ -18,5 +19,8 @@ public interface RickyMortyService {
 
     @GET("api/episode")
     Call<InformacionEpisodes> getEpisodeList();
+
+    @GET("api/character")
+    Call<InformacionCharacters> getPages(@Query("page") int pages);
 
 }

@@ -1,6 +1,4 @@
 
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 x
 Happ/src/main/java/com/example/mvprickymorty/adapter/LocationAdapter.java,a\f\af2af8cd14f378083eeda563dc28bc9c66dd69d9
 o
@@ -13,5 +11,3 @@ Aapp/src/main/java/com/example/mvprickymorty/modelos/Location.java,9\9\99d92a33
 Qapp/src/main/java/com/example/mvprickymorty/interfaces/location/ImvpLocation.java,2\4\242d0a169ff8dc8ac36fa3aaf959efcfc57de20f
 |
 Lapp/src/main/java/com/example/mvprickymorty/presenter/LocationPresenter.java,e\1\e1483d9d35d96356311d3c3f7a4e186de591179f
-}
-Mapp/src/main/java/com/example/mvprickymorty/interfaces/RickyMortyService.java,e\7\e72e6b2827608efbad058a9723716367c8513e7b

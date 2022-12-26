@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
@@ -19,9 +19,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        app:cardCornerRadius="50dp"
-        android:background="@color/white"
-        android:layout_marginTop="10dp">
+        app:cardBackgroundColor="@color/purple_700"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,18 +32,18 @@
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
-     android:gravity="center"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="TextView" />
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15dp"
                 android:gravity="center"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="15dp" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

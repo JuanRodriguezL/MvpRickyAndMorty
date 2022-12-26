@@ -41,7 +41,7 @@ public class HomeFragment extends Fragment implements ImvpCharacters.View  {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        recyclerView = view.findViewById(R.id.recyclerhomef);
+        recyclerView = view.findViewById(R.id.recyclerhomeP);
         rickyMortyAdapter = new RickyMortyAdapter(getContext());
     }
 

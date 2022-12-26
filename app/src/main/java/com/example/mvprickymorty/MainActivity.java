@@ -1,6 +1,6 @@
 package com.example.mvprickymorty;
 
-import android.content.Context;
+
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                         replaceFragment(new LocationFragment());
                         break;
 
-                }
+            }
 
                 return true;
             }

@@ -36,7 +36,8 @@ public class EpisodesAdapter extends RecyclerView.Adapter<EpisodesAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.textViewcap.setText(informacionEpisodesArrayList.get(position).getName());
+        holder.textViewcap.setText(new StringBuilder().append(informacionEpisodesArrayList.get(position)
+                .getId()).append(". ").append(informacionEpisodesArrayList.get(position).getName()).toString());
         holder.textViewcap2.setText(informacionEpisodesArrayList.get(position).getAir_date());
         holder.textViewcap3.setText(informacionEpisodesArrayList.get(position).getEpisode());
 
