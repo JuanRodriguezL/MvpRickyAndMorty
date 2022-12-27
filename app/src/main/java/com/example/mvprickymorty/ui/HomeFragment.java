@@ -35,14 +35,15 @@ public class HomeFragment extends Fragment implements ImvpCharacters.View {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        presenter = new RickyMortyPresenter(this);
-        presenter.consultarListaPersonajes(nextPrevious);
+       /* presenter = new RickyMortyPresenter(this);
+        presenter.consultarListaPersonajes(nextPrevious);*/
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        presenter = new RickyMortyPresenter(this);
+        presenter.consultarListaPersonajes(nextPrevious);
         recyclerView = view.findViewById(R.id.recyclerhomeP);
         imageViewNext = view.findViewById(R.id.imageView3);
         imageViewNext.setOnClickListener(v -> {

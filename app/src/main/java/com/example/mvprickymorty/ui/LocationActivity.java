@@ -28,7 +28,7 @@ public class LocationActivity extends AppCompatActivity implements ImvpLocation.
         setContentView(R.layout.activity_location);
         presenter = new LocationPresenter(this);
         presenter.consultarListaLocation();
-        recyclerViewL = findViewById(R.id.recyclreLocation);
+      //  recyclerViewL = findViewById(R.id.recyclreLocation);
         locationAdapter = new LocationAdapter(this);
 
 

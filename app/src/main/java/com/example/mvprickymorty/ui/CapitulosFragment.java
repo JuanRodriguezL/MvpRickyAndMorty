@@ -32,13 +32,15 @@ public class CapitulosFragment extends Fragment implements ImvpEpisode.View {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        presenter = new EpisodePresenter(this);
-        presenter.ConsultarListaEpisodesP();
+     /*   presenter = new EpisodePresenter(this);
+        presenter.ConsultarListaEpisodesP();*/
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        presenter = new EpisodePresenter(this);
+        presenter.ConsultarListaEpisodesP();
         recyclerView = view.findViewById(R.id.recyclerhomeE);
         episodesAdapter = new EpisodesAdapter(getContext());
 
