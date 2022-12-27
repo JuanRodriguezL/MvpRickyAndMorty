@@ -1,8 +1,8 @@
 package com.example.mvprickymorty.modelos;
 
 public class Info {
-    int count;
-    int pages;
+    private int count;
+    private int pages;
 
     public int getPages() {
         return pages;
@@ -28,7 +28,7 @@ public class Info {
         this.prev = prev;
     }
 
-    String next;
-    String prev;
+    private  String next;
+    private String prev;
 
 }

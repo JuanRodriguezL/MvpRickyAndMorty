@@ -3,13 +3,13 @@ package com.example.mvprickymorty.modelos;
 import java.util.ArrayList;
 
 public class Episodes {
-    String id;
-    String name;
-    String air_date;
-    String episode;
-    ArrayList<String> characters;
-    String url;
-    String created;
+    private String id;
+    private String name;
+    private String air_date;
+    private String episode;
+    private ArrayList<String> characters;
+    private String url;
+    private String created;
 
     public String getId() {
         return id;

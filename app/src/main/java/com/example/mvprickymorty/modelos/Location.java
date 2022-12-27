@@ -3,13 +3,13 @@ package com.example.mvprickymorty.modelos;
 import java.util.ArrayList;
 
 public class Location {
-    int id ;
-    String name;
-    String type;
-    String dimension;
-    ArrayList<String> residents;
-    String url;
-    String created;
+    private int id ;
+    private String name;
+    private String type;
+    private String dimension;
+    private ArrayList<String> residents;
+    private  String url;
+    private String created;
 
 
     public int getId() {

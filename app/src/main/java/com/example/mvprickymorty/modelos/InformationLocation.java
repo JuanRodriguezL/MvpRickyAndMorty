@@ -14,4 +14,14 @@ public class InformationLocation {
 
     ArrayList<Location> results;
 
+    public Info getInfo() {
+        return info;
+    }
+
+    public void setInfo(Info info) {
+        this.info = info;
+    }
+
+    Info info;
+
 }

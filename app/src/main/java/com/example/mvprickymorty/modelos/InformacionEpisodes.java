@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 public class InformacionEpisodes {
 
+    ArrayList<Episodes> results;
+    Info info;
+
     public ArrayList<Episodes> getResults() {
         return results;
     }
@@ -12,5 +15,13 @@ public class InformacionEpisodes {
         this.results = results;
     }
 
-    ArrayList<Episodes> results;
+    public Info getInfo() {
+        return info;
+    }
+
+    public void setInfo(Info info) {
+        this.info = info;
+    }
+
+
 }

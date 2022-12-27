@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class InformacionCharacters {
 
 
-    ArrayList<CharactersRickyMorty> results;
-    Info info;
+    private  ArrayList<CharactersRickyMorty> results;
+    private  Info info;
 
 
     public Info getInfo() {

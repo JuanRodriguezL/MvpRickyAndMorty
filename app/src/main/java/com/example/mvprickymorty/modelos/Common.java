@@ -1,8 +1,9 @@
 package com.example.mvprickymorty.modelos;
 
 public class Common {
-    String name;
-    String url;
+    private String name;
+    private String url;
+
     public String getName() {
         return name;
     }
@@ -18,7 +19,6 @@ public class Common {
     public void setUrl(String url) {
         this.url = url;
     }
-
 
 
 }
