@@ -27,7 +27,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_width="300dp"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:text="PERSONAJES"
             android:textStyle="bold"
@@ -39,6 +39,7 @@
             android:id="@+id/imageView3"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:clickable="true"
             app:layout_constraintStart_toEndOf="@id/textView"
             app:layout_constraintBottom_toBottomOf="parent"
             android:background="@drawable/ic_baseline_arrow_circle_right_24" />

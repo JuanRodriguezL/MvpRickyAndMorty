@@ -56,7 +56,7 @@ public class CapitulosFragment extends Fragment implements ImvpEpisode.View {
     @Override
     public void RecyclerEpisodesV(InformacionEpisodes episodesRickyMortyArrayList) {
         episodesAdapter.setAdicion(episodesRickyMortyArrayList);
-        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1));
         recyclerView.setAdapter(episodesAdapter);
 
 

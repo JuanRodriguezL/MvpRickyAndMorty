@@ -11,7 +11,7 @@ import retrofit2.http.Query;
 public interface RickyMortyService {
 
     @GET("api/character")
-    Call<InformacionCharacters> getCharacterList();
+    Call<InformacionCharacters> getCharacterList(@Query("page") int pages);
 
     @GET("api/location")
     Call<InformationLocation> getLocationList();
@@ -19,8 +19,5 @@ public interface RickyMortyService {
 
     @GET("api/episode")
     Call<InformacionEpisodes> getEpisodeList();
-
-    @GET("api/character")
-    Call<InformacionCharacters> getPages(@Query("page") int pages);
 
 }

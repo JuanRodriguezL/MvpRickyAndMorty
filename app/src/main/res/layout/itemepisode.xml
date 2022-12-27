@@ -14,29 +14,68 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <TextView
-           android:layout_margin="8dp"
-            android:id="@+id/episode"
-            android:layout_gravity="center"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre" />
+            android:orientation="vertical">
 
-        <TextView
-          android:layout_margin="8dp"
-            android:id="@+id/episode2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="F Lanzamiento" />
+            <TextView
+                android:id="@+id/episodeI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                android:text="Nombre :" />
 
-        <TextView
-            android:id="@+id/episode3"
-            android:layout_margin="8dp"
+            <TextView
+                android:id="@+id/episode2I"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                android:text="F Lanzamiento :" />
+
+            <TextView
+                android:id="@+id/episode3I"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                android:text="Temporada :" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Temporada" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/episode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:text="Nombre" />
+
+            <TextView
+                android:id="@+id/episode2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="F Lanzamiento" />
+
+            <TextView
+                android:id="@+id/episode3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Temporada" />
+        </LinearLayout>
 
 
     </LinearLayout>

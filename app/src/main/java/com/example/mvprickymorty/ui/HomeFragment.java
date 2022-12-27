@@ -1,7 +1,10 @@
 package com.example.mvprickymorty.ui;
 
-import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -9,11 +12,6 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import com.example.mvprickymorty.MainActivity;
 import com.example.mvprickymorty.R;
 import com.example.mvprickymorty.adapter.RickyMortyAdapter;
 import com.example.mvprickymorty.interfaces.personajes.ImvpCharacters;
@@ -21,10 +19,13 @@ import com.example.mvprickymorty.modelos.InformacionCharacters;
 import com.example.mvprickymorty.presenter.RickyMortyPresenter;
 
 
-public class HomeFragment extends Fragment implements ImvpCharacters.View  {
+public class HomeFragment extends Fragment implements ImvpCharacters.View {
     RecyclerView recyclerView;
     ImvpCharacters.Presenter presenter;
     RickyMortyAdapter rickyMortyAdapter;
+    private ImageView imageViewNext;
+    private ImageView imageViewPrev;
+    private int nextPrevious = 1;
 
 
     public HomeFragment() {
@@ -35,13 +36,25 @@ public class HomeFragment extends Fragment implements ImvpCharacters.View  {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         presenter = new RickyMortyPresenter(this);
-        presenter.consultarListaPersonajes();
+        presenter.consultarListaPersonajes(nextPrevious);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         recyclerView = view.findViewById(R.id.recyclerhomeP);
+        imageViewNext = view.findViewById(R.id.imageView3);
+        imageViewNext.setOnClickListener(v -> {
+            nextPrevious++;
+            presenter.consultarListaPersonajes(nextPrevious);
+        });
+
+        imageViewPrev = view.findViewById(R.id.imageView2);
+        imageViewPrev.setOnClickListener(v -> {
+            nextPrevious--;
+            presenter.consultarListaPersonajes(nextPrevious);
+        });
         rickyMortyAdapter = new RickyMortyAdapter(getContext());
     }
 

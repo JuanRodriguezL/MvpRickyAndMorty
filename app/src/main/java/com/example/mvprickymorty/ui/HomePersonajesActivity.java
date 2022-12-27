@@ -22,7 +22,7 @@ public class HomePersonajesActivity extends AppCompatActivity implements ImvpCha
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_personajes);
         presenter = new RickyMortyPresenter(this);
-        presenter.consultarListaPersonajes();
+        presenter.consultarListaPersonajes(0);
         recyclerView = findViewById(R.id.recyclerhome);
         rickyMortyAdapter = new RickyMortyAdapter(this);
     }

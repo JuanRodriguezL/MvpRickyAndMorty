@@ -12,11 +12,11 @@ public interface ImvpCharacters {
 
     interface Presenter{
         void ShowRecyclerP(InformacionCharacters modelosRickyMortyArrayList);
-        void consultarListaPersonajes();
+        void consultarListaPersonajes(int pageNum);
     }
 
     interface Model{
-        void consultarListaPersonajes();
+        void consultarListaPersonajes(int pageNum);
 
     }
 }

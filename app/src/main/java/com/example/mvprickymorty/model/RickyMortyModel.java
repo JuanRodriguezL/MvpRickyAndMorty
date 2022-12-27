@@ -27,7 +27,7 @@ public class RickyMortyModel implements ImvpCharacters.Model {
     }
 
     @Override
-    public void consultarListaPersonajes() {
+    public void consultarListaPersonajes(int pageNum) {
         informacionCharacters = new InformacionCharacters();
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://rickandmortyapi.com/")
@@ -36,7 +36,7 @@ public class RickyMortyModel implements ImvpCharacters.Model {
 
 
         RickyMortyService rickyMortyService = retrofit.create(RickyMortyService.class);
-        Call<InformacionCharacters> call = rickyMortyService.getCharacterList();
+        Call<InformacionCharacters> call = rickyMortyService.getCharacterList(pageNum);
         call.enqueue(new Callback<InformacionCharacters>() {
             @Override
             public void onResponse(Call<InformacionCharacters> call, Response<InformacionCharacters> response) {
@@ -55,7 +55,5 @@ public class RickyMortyModel implements ImvpCharacters.Model {
 
 
     }
-
-
 
 }

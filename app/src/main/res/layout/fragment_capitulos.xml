@@ -23,8 +23,6 @@
             android:gravity="center"/>
 
 
-
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerhomeE"
             android:layout_width="match_parent"

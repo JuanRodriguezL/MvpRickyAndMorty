@@ -22,9 +22,11 @@ public class RickyMortyPresenter implements ImvpCharacters.Presenter{
     }
 
     @Override
-    public void consultarListaPersonajes() {
+    public void consultarListaPersonajes(int pageNum) {
         if(modelC !=null){
-            modelC.consultarListaPersonajes();
+            modelC.consultarListaPersonajes(pageNum);
         }
     }
+
+
 }
