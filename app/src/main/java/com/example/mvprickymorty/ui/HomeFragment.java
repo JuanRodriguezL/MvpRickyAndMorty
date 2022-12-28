@@ -9,14 +9,19 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mvprickymorty.R;
 import com.example.mvprickymorty.adapter.RickyMortyAdapter;
+import com.example.mvprickymorty.interfaces.OnclickListener;
 import com.example.mvprickymorty.interfaces.personajes.ImvpCharacters;
+import com.example.mvprickymorty.modelos.CharactersRickyMorty;
 import com.example.mvprickymorty.modelos.InformacionCharacters;
 import com.example.mvprickymorty.presenter.RickyMortyPresenter;
+
+import java.util.ArrayList;
 
 
 public class HomeFragment extends Fragment implements ImvpCharacters.View {

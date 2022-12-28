@@ -1,9 +1,11 @@
 package com.example.mvprickymorty.adapter;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,11 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mvprickymorty.R;
 import com.example.mvprickymorty.modelos.Episodes;
-import com.example.mvprickymorty.modelos.InformacionCharacters;
 import com.example.mvprickymorty.modelos.InformacionEpisodes;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 public class EpisodesAdapter extends RecyclerView.Adapter<EpisodesAdapter.ViewHolder> {
 
@@ -30,7 +30,7 @@ public class EpisodesAdapter extends RecyclerView.Adapter<EpisodesAdapter.ViewHo
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.itemepisode,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.itemepisode, parent, false);
         return new ViewHolder(view);
     }
 
@@ -56,14 +56,16 @@ public class EpisodesAdapter extends RecyclerView.Adapter<EpisodesAdapter.ViewHo
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView textViewcap;
-        TextView textViewcap2;
-        TextView textViewcap3;
+        private TextView textViewcap;
+        private TextView textViewcap2;
+        private TextView textViewcap3;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textViewcap = itemView.findViewById(R.id.episode);
             textViewcap2 = itemView.findViewById(R.id.episode2);
             textViewcap3 = itemView.findViewById(R.id.episode3);
+
         }
     }
 }
